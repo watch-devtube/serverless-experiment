@@ -16,7 +16,6 @@ plugins:
 
 package:
   individually: true
-  artifact: my-proxy.zip
   exclude:
     - node_modules/**
     - .gitignore
@@ -31,12 +30,9 @@ functions:
     handler: proxy
     events:
       - http: path
-    package:
-      artifact: proxy.zip 
   proxy2:
     handler: proxy2
     package:
-      artifact: proxy2.zip 
       include:
         - "data/*.json"
     events:

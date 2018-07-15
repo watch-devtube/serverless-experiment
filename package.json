@@ -1,12 +1,9 @@
 {
-  "name": "dev-tube-express",
-  "description": "Dev.Tube Web Express App",
+  "name": "my-proxy",
+  "description": "My Proxy",
   "version": "1.0.0",
-  "author": "Eduards Sizovs <eduards@devternity.com>",
   "main": "index.js",
-  "private": true,
   "scripts": {
-    "dev": "tsc --project tsconfig.json && node app.js dev",
     "compile": "tsc --project tsconfig.json"
   },
   "dependencies": {

@@ -4,7 +4,7 @@ export function proxy(req, res) {
     req.url = '/'
     req.path = '/'
   }
-  response.status(200).send('Hello!')
+  res.status(200).send('Hello!')
 }
 
 export function proxy2(req, res) {
@@ -12,6 +12,6 @@ export function proxy2(req, res) {
     req.url = '/'
     req.path = '/'
   }
-  response.status(200).send('Hello!')
+  res.status(200).send('Hello!')
 }
 

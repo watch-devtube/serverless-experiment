@@ -35,31 +35,29 @@ Serverless: Load command config:credentials
 Serverless: Load command logs
 Serverless: Invoke package
 Serverless: Compiling with Typescript...
-index.ts (7,3): Cannot find name 'response'.
-index.ts (15,3): Cannot find name 'response'.
 Serverless: Typescript compiled.
 Serverless: Packaging service...
+Serverless: Excluding development dependencies...
+Serverless: Excluding development dependencies...
  
   Error --------------------------------------------------
  
-  ENOENT: no such file or directory, lstat 'E:\Work\serverless-experiment\.build\.serverless'
+  ENOENT: no such file or directory, open 'E:\Work\serverless-experiment\.build\package.json'
  
      For debugging logs, run again after setting the "SLS_DEBUG=*" environment variable.
  
   Stack Trace --------------------------------------------
  
-Error: ENOENT: no such file or directory, lstat 'E:\Work\serverless-experiment\.build\.serverless'
-    at PluginManager.invoke (C:\Users\xaad\AppData\Roaming\npm\node_modules\serverless\lib\classes\PluginManager.js:390:22)
-    at PluginManager.run (C:\Users\xaad\AppData\Roaming\npm\node_modules\serverless\lib\classes\PluginManager.js:421:17)
-    at variables.populateService.then.then (C:\Users\xaad\AppData\Roaming\npm\node_modules\serverless\lib\Serverless.js:163:33)
-    at runCallback (timers.js:763:18)
-    at tryOnImmediate (timers.js:734:5)
-    at processImmediate (timers.js:716:5)
-    at process.topLevelDomainCallback (domain.js:102:23)
-From previous event:
-    at Serverless.run (C:\Users\xaad\AppData\Roaming\npm\node_modules\serverless\lib\Serverless.js:150:8)
-    at serverless.init.then (C:\Users\xaad\AppData\Roaming\npm\node_modules\serverless\bin\serverless:42:50)
-    at <anonymous>
+Error: ENOENT: no such file or directory, open 'E:\Work\serverless-experiment\.build\package.json'
+    at Package.getFileContent (C:\Users\xaad\AppData\Roaming\npm\node_modules\serverless\lib\plugins\package\lib\zipService.js:116:15)
+    at Package.getFileContentAndStat (C:\Users\xaad\AppData\Roaming\npm\node_modules\serverless\lib\plugins\package\lib\zipService.js:105:12)
+    at Array.map (<anonymous>)
+    at WriteStream.output.on (C:\Users\xaad\AppData\Roaming\npm\node_modules\serverless\lib\plugins\package\lib\zipService.js:83:29)
+    at WriteStream.emit (events.js:180:13)
+    at WriteStream.emit (domain.js:422:20)
+    at C:\Users\xaad\AppData\Roaming\npm\node_modules\serverless\node_modules\graceful-fs\graceful-fs.js:214:14
+    at C:\Users\xaad\AppData\Roaming\npm\node_modules\serverless\node_modules\graceful-fs\graceful-fs.js:241:16
+    at FSReqWrap.oncomplete (fs.js:153:20)
  
   Get Support --------------------------------------------
      Docs:          docs.serverless.com
