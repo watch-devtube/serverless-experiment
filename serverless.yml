@@ -1,0 +1,43 @@
+service: my-proxy
+
+provider:
+  name: google
+  runtime: nodejs
+  project: my-proxy
+  credentials: service_key.json
+  memorySize: 512
+  timeout: 540s
+  labels:
+    application: My Proxy
+
+plugins:
+  - serverless-google-cloudfunctions
+  - serverless-plugin-typescript
+
+package:
+  individually: true
+  artifact: my-proxy.zip
+  exclude:
+    - node_modules/**
+    - .gitignore
+    - .git/**
+    - yarn*
+    - service_key.json
+  include:
+    - "*.js"
+
+functions:
+  proxy:
+    handler: proxy
+    events:
+      - http: path
+    package:
+      artifact: proxy.zip 
+  proxy2:
+    handler: proxy2
+    package:
+      artifact: proxy2.zip 
+      include:
+        - "data/*.json"
+    events:
+      - http: path

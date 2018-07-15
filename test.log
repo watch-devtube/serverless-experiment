@@ -1,0 +1,73 @@
+Serverless: Load command run
+Serverless: Load command config
+Serverless: Load command config:credentials
+Serverless: Load command create
+Serverless: Load command install
+Serverless: Load command package
+Serverless: Load command deploy
+Serverless: Load command deploy:function
+Serverless: Load command deploy:list
+Serverless: Load command deploy:list:functions
+Serverless: Load command invoke
+Serverless: Load command invoke:local
+Serverless: Load command info
+Serverless: Load command logs
+Serverless: Load command login
+Serverless: Load command logout
+Serverless: Load command metrics
+Serverless: Load command print
+Serverless: Load command remove
+Serverless: Load command rollback
+Serverless: Load command rollback:function
+Serverless: Load command slstats
+Serverless: Load command plugin
+Serverless: Load command plugin
+Serverless: Load command plugin:install
+Serverless: Load command plugin
+Serverless: Load command plugin:uninstall
+Serverless: Load command plugin
+Serverless: Load command plugin:list
+Serverless: Load command plugin
+Serverless: Load command plugin:search
+Serverless: Load command emit
+Serverless: Load command config
+Serverless: Load command config:credentials
+Serverless: Load command logs
+Serverless: Invoke package
+Serverless: Compiling with Typescript...
+index.ts (7,3): Cannot find name 'response'.
+index.ts (15,3): Cannot find name 'response'.
+Serverless: Typescript compiled.
+Serverless: Packaging service...
+ 
+  Error --------------------------------------------------
+ 
+  ENOENT: no such file or directory, lstat 'E:\Work\serverless-experiment\.build\.serverless'
+ 
+     For debugging logs, run again after setting the "SLS_DEBUG=*" environment variable.
+ 
+  Stack Trace --------------------------------------------
+ 
+Error: ENOENT: no such file or directory, lstat 'E:\Work\serverless-experiment\.build\.serverless'
+    at PluginManager.invoke (C:\Users\xaad\AppData\Roaming\npm\node_modules\serverless\lib\classes\PluginManager.js:390:22)
+    at PluginManager.run (C:\Users\xaad\AppData\Roaming\npm\node_modules\serverless\lib\classes\PluginManager.js:421:17)
+    at variables.populateService.then.then (C:\Users\xaad\AppData\Roaming\npm\node_modules\serverless\lib\Serverless.js:163:33)
+    at runCallback (timers.js:763:18)
+    at tryOnImmediate (timers.js:734:5)
+    at processImmediate (timers.js:716:5)
+    at process.topLevelDomainCallback (domain.js:102:23)
+From previous event:
+    at Serverless.run (C:\Users\xaad\AppData\Roaming\npm\node_modules\serverless\lib\Serverless.js:150:8)
+    at serverless.init.then (C:\Users\xaad\AppData\Roaming\npm\node_modules\serverless\bin\serverless:42:50)
+    at <anonymous>
+ 
+  Get Support --------------------------------------------
+     Docs:          docs.serverless.com
+     Bugs:          github.com/serverless/serverless/issues
+     Issues:        forum.serverless.com
+ 
+  Your Environment Information -----------------------------
+     OS:                     win32
+     Node Version:           9.11.1
+     Serverless Version:     1.28.0
+ 

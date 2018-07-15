@@ -1,0 +1,19 @@
+{
+  "name": "dev-tube-express",
+  "description": "Dev.Tube Web Express App",
+  "version": "1.0.0",
+  "author": "Eduards Sizovs <eduards@devternity.com>",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "dev": "tsc --project tsconfig.json && node app.js dev",
+    "compile": "tsc --project tsconfig.json"
+  },
+  "dependencies": {
+    "serverless-google-cloudfunctions": "^1.2.0",
+    "serverless-plugin-typescript": "^1.1.5"
+  },
+  "devDependencies": {
+    "@types/node": "^10.0.3"
+  }
+}
